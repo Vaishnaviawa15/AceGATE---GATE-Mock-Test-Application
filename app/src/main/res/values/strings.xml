@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="prepare_for_gate">Prepare for GATE CSE</string>
+    <string name="menu">menu</string>
+    <string name="banner">banner</string>
+    <string name="content"> Prepare for GATE CSE</string>
+    <string name="logo">logo</string>
+    <string name="c">banner</string>
+    <string name="with_acegate">with AceGATE</string>
+
+    <string name="start_test">Begin Test Now</string>
+    <string name="profileicon">Profile icon</string>
+    <string name="homeicon">home icon</string>
+    <string name="resulticon">result icon</string>
+    <string name="examicon">exam icon</string>
+
+    <string name="rules">Rules</string>
+    <string name="r1"> Test is for 30 minutes </string>
+    <string name="r2">Close all browers or tabs</string>
+    <string name="r3"> Do not switch tabs </string>
+    <string name="r4">Take exam independently</string>
+    <string name="r5">Timer cannot be resumed</string>
+    <string name="start">Start Test</string>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settinguppage">
+
+    <ImageView
+        android:id="@+id/settingimage"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/settinguppage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GATE Computer and IT"
+        android:layout_below="@id/settingimage"
+        android:id="@+id/gatetext"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/body1"
+        android:text="You have selected GATE computer and IT"
+        android:textSize="20dp"
+        android:layout_below="@id/gatetext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/body2"
+        android:text="Click on 'Confirm' button to Proceed"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/body1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_below="@id/body2"
+        android:id="@+id/confirm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="23dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

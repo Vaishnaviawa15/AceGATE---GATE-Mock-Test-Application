@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homescreen">
+
+
+
+        <ImageButton
+        android:id="@+id/Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu"
+        android:contentDescription="@string/menu"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="10dp"/>
+
+        <ListView
+        android:id="@+id/popup_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+
+        <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/acegate"/>
+
+
+        <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/content"
+       android:layout_below="@id/banner"
+       android:id="@+id/tv1"
+       android:layout_centerHorizontal="true"
+       android:textSize="30dp"
+       android:layout_marginTop="30dp" />
+
+
+        <ImageView
+        android:id="@+id/banner"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+        android:layout_below="@id/logo"
+        android:contentDescription="@string/c"
+        android:src="@drawable/homeimage"/>
+
+
+        <Button
+        android:id="@+id/Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Begin Test Now"
+        android:textSize="20dp"
+        android:layout_below="@id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"/>
+
+
+
+        <ImageButton
+            android:id="@+id/profileIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="145dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/profileicon"
+            android:contentDescription="@string/profileicon"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/Test"/>
+        <ImageButton
+            android:id="@+id/examIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="145dp"
+            android:src="@drawable/examicon"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/profileIcon"
+            android:contentDescription="@string/examicon"
+            android:layout_below="@id/Test"/>
+        <ImageButton
+            android:id="@+id/homeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="145dp"
+            android:src="@drawable/homeicon"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/resultIcon"
+            android:contentDescription="@string/homeicon"
+            android:layout_below="@id/Test"/>
+        <ImageButton
+            android:id="@+id/resultIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="145dp"
+            android:src="@drawable/result"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/white"
+            android:layout_toRightOf="@id/examIcon"
+            android:contentDescription="@string/resulticon"
+            android:layout_below="@id/Test"/>
+
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp" />
+</androidx.drawerlayout.widget.DrawerLayout>

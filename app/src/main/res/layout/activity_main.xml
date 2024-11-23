@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:max="3"
+        android:progress="1"
+        android:indeterminate="false"
+        android:progressDrawable="@android:drawable/progress_horizontal" />
+
+    <!-- TextView for Content -->
+    <TextView
+        android:id="@+id/textContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Welcome to AceGATE"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <!-- ImageView for Content -->
+    <ImageView
+        android:id="@+id/imageContent"
+        android:layout_width="wrap_content"
+        android:layout_height="480dp"
+        android:layout_below="@id/textContent"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/homeimage" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageContent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Next"
+        android:textSize="18dp"
+        android:visibility="visible"/>
+
+    <!-- Sign In Button -->
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageContent"
+        android:layout_marginTop="10dp"
+        android:text="Sign Up"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:visibility="gone"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignUp"
+        android:layout_marginTop="10dp"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
+
+
+
+

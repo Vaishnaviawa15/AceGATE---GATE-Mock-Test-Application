@@ -1,0 +1,282 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Question 1 -->
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which if the following is/are the levels of implementation of data structure?" />
+
+        <RadioGroup
+            android:id="@+id/options1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/option1_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abstract level" />
+            <RadioButton
+                android:id="@+id/option1_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Application level" />
+            <RadioButton
+                android:id="@+id/option1_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Implementation level" />
+            <RadioButton
+                android:id="@+id/option1_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All of the above" />
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A binary search tree whose left subtree and right subtree differ in height by at most 1 unit is called?" />
+
+        <RadioGroup
+            android:id="@+id/options2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/option2_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AVL tree" />
+            <RadioButton
+                android:id="@+id/option2_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red-black tree" />
+            <RadioButton
+                android:id="@+id/option2_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lemma tree" />
+            <RadioButton
+                android:id="@+id/option2_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None of the above" />
+        </RadioGroup>
+
+        <!-- Question 3 -->
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the time complexity of inserting an element at the end of an array?" />
+
+        <RadioGroup
+            android:id="@+id/options3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/option3_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O(1)" />
+            <RadioButton
+                android:id="@+id/option3_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O(nlogn)" />
+            <RadioButton
+                android:id="@+id/option3_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O(log n)" />
+            <RadioButton
+                android:id="@+id/option3_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O(n)" />
+        </RadioGroup>
+
+        <!-- Question 4 -->
+        <TextView
+            android:id="@+id/question4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which data structure is best suited for implementing a recursive algorithm?" />
+
+        <RadioGroup
+            android:id="@+id/options4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/option4_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stack" />
+            <RadioButton
+                android:id="@+id/option4_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Queue" />
+            <RadioButton
+                android:id="@+id/option4_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Array" />
+            <RadioButton
+                android:id="@+id/option4_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Linked List" />
+        </RadioGroup>
+
+        <!-- Question 5 -->
+        <TextView
+            android:id="@+id/question5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In a binary search tree, which traversal visits the nodes in ascending order?" />
+
+        <RadioGroup
+            android:id="@+id/options5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/option5_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preorder" />
+            <RadioButton
+                android:id="@+id/option5_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inorder" />
+            <RadioButton
+                android:id="@+id/option5_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Postorder" />
+            <RadioButton
+                android:id="@+id/option5_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Levelorder" />
+        </RadioGroup>
+
+        <!-- Question 6 -->
+        <TextView
+            android:id="@+id/question6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which sorting algorithm has the best average-case time complexity?" />
+
+        <RadioGroup
+            android:id="@+id/options6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/option6_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Merge Sort" />
+            <RadioButton
+                android:id="@+id/option6_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selection sort" />
+            <RadioButton
+                android:id="@+id/option6_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insertion Sort" />
+            <RadioButton
+                android:id="@+id/option6_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bubble sort" />
+        </RadioGroup>
+
+        <!-- Question 7 -->
+        <TextView
+            android:id="@+id/question7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the worst-case time complexity of quicksort?" />
+
+        <RadioGroup
+            android:id="@+id/options7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/option7_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O(n)" />
+            <RadioButton
+                android:id="@+id/option7_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O(nlogn)" />
+            <RadioButton
+                android:id="@+id/option7_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O(n^2)" />
+            <RadioButton
+                android:id="@+id/option7_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O(log n)" />
+        </RadioGroup>
+
+        <!-- Question 8 -->
+        <TextView
+            android:id="@+id/question8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which data structure is used in Depth First Search (DFS) algorithm?" />
+
+        <RadioGroup
+            android:id="@+id/options8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/option8_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Queue" />
+            <RadioButton
+                android:id="@+id/option8_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stack" />
+            <RadioButton
+                android:id="@+id/option8_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heap" />
+            <RadioButton
+                android:id="@+id/option8_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Linked List" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+</ScrollView>

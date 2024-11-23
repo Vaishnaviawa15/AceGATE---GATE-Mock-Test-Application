@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/acegate"/>
+
+    <TextView
+        android:id="@+id/score_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="100dp"
+        android:textSize="50dp" />
+
+    <ImageButton
+        android:id="@+id/profileIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="585dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/profileicon"
+        android:contentDescription="@string/profileicon"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/logo"/>
+    <ImageButton
+        android:id="@+id/examIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="585dp"
+        android:src="@drawable/examicon"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/profileIcon"
+        android:contentDescription="@string/examicon"
+        android:layout_below="@id/logo"/>
+    <ImageButton
+        android:id="@+id/homeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="585dp"
+        android:src="@drawable/homeicon"
+        android:backgroundTint="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/resultIcon"
+        android:contentDescription="@string/homeicon"
+        android:layout_below="@id/logo"/>
+    <ImageButton
+        android:id="@+id/resultIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="585dp"
+        android:src="@drawable/result"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="@color/white"
+        android:layout_toRightOf="@id/examIcon"
+        android:contentDescription="@string/resulticon"
+        android:layout_below="@id/logo"/>
+
+
+
+</RelativeLayout>
+
+
+

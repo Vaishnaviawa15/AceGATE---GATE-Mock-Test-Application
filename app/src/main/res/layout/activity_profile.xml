@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/acegate"/>
+
+    <!-- My Tests and Analysis Navigation -->
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/myTestsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Tests"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"/>
+
+        <Button
+            android:id="@+id/analysisButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Analysis"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
+
+    <!-- Content Section for My Tests and Test Analysis -->
+    <FrameLayout
+        android:id="@+id/contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigationBar"
+        android:layout_marginTop="20dp">
+
+        <!-- My Tests Section -->
+        <LinearLayout
+            android:id="@+id/myTestsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/testTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beginning Your Preparation Journey"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/giveTestButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take Test"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <!-- Test Analysis Section -->
+        <LinearLayout
+            android:id="@+id/testAnalysisLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/analysisTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Analyze your Preparation"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/testAnalysisContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="and Crack GATE"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:id="@+id/viewResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Result"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+    </FrameLayout>
+    <!-- Review Section -->
+    <TextView
+        android:id="@+id/reviewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write a Review"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:layout_below="@id/contentFrame"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/reviewInput"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:hint="Your Review"
+        android:layout_below="@id/reviewTitle"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reviewInput"
+        android:layout_centerHorizontal="true"
+        android:numStars="5"
+        android:progressTint="@color/yellow"
+        android:stepSize="1.0"/>
+
+    <Button
+        android:id="@+id/submitReviewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Review"
+        android:layout_below="@id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+
+    <ImageButton
+        android:id="@+id/profileIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="585dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/profileicon"
+        android:contentDescription="@string/profileicon"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/logo"/>
+    <ImageButton
+        android:id="@+id/examIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="585dp"
+        android:src="@drawable/examicon"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/profileIcon"
+        android:contentDescription="@string/examicon"
+        android:layout_below="@id/logo"/>
+    <ImageButton
+        android:id="@+id/homeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="585dp"
+        android:src="@drawable/homeicon"
+        android:backgroundTint="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/resultIcon"
+        android:contentDescription="@string/homeicon"
+        android:layout_below="@id/logo"/>
+    <ImageButton
+        android:id="@+id/resultIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="585dp"
+        android:src="@drawable/result"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="@color/white"
+        android:layout_toRightOf="@id/examIcon"
+        android:contentDescription="@string/resulticon"
+        android:layout_below="@id/logo"/>
+
+
+</RelativeLayout>
+
+
+
